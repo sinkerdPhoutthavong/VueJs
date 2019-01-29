@@ -14,6 +14,15 @@ var app = new Vue({
          },
          setName: function(n){
             return this.name=n
+         },
+         addAge:function(){
+            this.age++;
+            console.log(this.age);
+         },
+         SubstractAge:function(){
+             this.age--;
+            console.log(this.age);
+            
          }
     }
 })

@@ -14,11 +14,15 @@
         <p>job: {{job}}</p>
         <p>age: {{age}}</p>
         <p>status: {{status}}</p>
-        <p>website: <a v-bind:href="website">Click</a></p> //ການດຶງຂໍ້ມູນໃສ່ ບອກ ຕ້ອງໃສ້່ V-bind:........ຕາມດ້ວຍຕົວຂໍ້ມູນເຊັ່ນ name
+        <p>website: <a v-bind:href="website">Click</a></p> 
+        <!-- //ການດຶງຂໍ້ມູນໃສ່ ບອກ ຕ້ອງໃສ້່ keyword: V-bind:........ຕາມດ້ວຍຕົວຂໍ້ມູນເຊັ່ນ name -->
         <input type="text" id="name" v-bind:value="name">
         <input type="text" id="name" v-bind:value="job">
         <input type="text" id="name" v-bind:value="age">
-        <input type="text" id="name" v-bind:value="status">
+        <input type="text" id="name" v-bind:value="status"><br><br>
+        <button type="button" name="button" v-on:click="addAge()">Add</button> 
+        <!-- ປົກກະຕິຈະໃຊ້ onclick="functionName()" ແຕ່ໃນ VUE js ຕ້ອງໃສ້່ v-on:click="functionName()" -->
+        <button type="button" name="button" v-on:click="SubstractAge()">Substract</button>
     </div>
     <script src="app.js" charset="utf-8"></script>
 
