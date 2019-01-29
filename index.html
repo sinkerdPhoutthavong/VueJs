@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Vue.js - Tutorial</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
-    <h1>555</h1>
+
+    <div id="view-App">
+        <p>Name: {{name}}</p>
+        <p>job: {{job}}</p>
+        <p>age: {{age}}</p>
+        <p>status: {{status}}</p>
+        <p>website: <a v-bind:href="website">Click</a></p> //ການດຶງຂໍ້ມູນໃສ່ ບອກ ຕ້ອງໃສ້່ V-bind:........ຕາມດ້ວຍຕົວຂໍ້ມູນເຊັ່ນ name
+        <input type="text" id="name" v-bind:value="name">
+        <input type="text" id="name" v-bind:value="job">
+        <input type="text" id="name" v-bind:value="age">
+        <input type="text" id="name" v-bind:value="status">
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+
 </body>
 </html>
