@@ -2,6 +2,7 @@ Vue.component('todo-item', {
     template: '<li>This is a todo</li>'
   })
 
+
 var app = new Vue({
     el:"#view-App",
     data:{
@@ -16,6 +17,11 @@ var app = new Vue({
             { text: 'Learn JavaScript' },
             { text: 'Learn Vue' },
             { text: 'Build something awesome' }
+        ],
+        foods:[
+
+            {}
+            
         ]
     },
     methods:{
