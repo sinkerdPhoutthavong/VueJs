@@ -8,7 +8,7 @@ var app = new Vue({
     data:{
         message: "Sinkerd Laos",
         name: "sinkerd",
-        job: "developer",
+        job: "",
         age: 20,
         status: false,
         count:0,
@@ -20,9 +20,9 @@ var app = new Vue({
         ],
         foods:[
 
-            {}
             
-        ]
+        ],
+        gender: " "
     },
     methods:{
          getName: function(){

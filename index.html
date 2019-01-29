@@ -17,8 +17,9 @@
             </ol>
             
              <!-- ຄໍາສັ່ງ V-model ໃຊ້ສໍາລັບການສະແດງຂໍ້ຄວາມແບບ Reatime ຜຸ້ຂໍ້ມູນໃສ່ກັນ ຕົວໃດປ່ຽນກະປ່ຽນ <input v-model="message"> -->
-            <p>{{ message }}</p>
-            <input v-model="message">
+            <p>{{ name }}</p>
+            <input v-model="name">
+            <br><br>
              ເລືອກອາຫານ:
             <input type="checkbox" value="ຜັດແກງກະຫຼີ່" v-model="foods">
             <label>ຜັດແກງກະຫຼີ່</label>
@@ -26,14 +27,29 @@
             <label>ໝີ່ໄວໆ</label>
             <input type="checkbox" value="ລາບຂາວ" v-model="foods">
             <label>ລາບຂາວ</label>
-            <h2>ອາຫານທີ່ມັກ: {{foods}}</h2>
-
+            <br><br>
+            Gender:
+            <input type="radio" value="ຊາຍ" v-model="gender">
+            <label>Male</label>
+            <input type="radio" value="ຍິງ" v-model="gender">
+            <label>Female</label>
+            <br><br>
+            ອາຊີບ:
+            <select v-model="job">
+                <option disabled>ກະລຸນາເລືອກອາຊີບຂອງທ່ານ</option>
+                <option>ໂປຣແກຣມເມີ່</option>
+                <option>ພໍ່ຄ້າ</option>
+                <option>ນັກສຶກສາ</option>
+            </select>
             <hr>
         <p>Name: {{name}}</p>
         <p>job: {{job}}</p>
         <p>age: {{age}}</p>
         <p>status: {{status}}</p>
         <p>website: <a v-bind:href="website">Click</a></p> 
+        <p>ເພດ: {{gender}}</p>
+        <p>ອາຊີບ: {{job}}</p>
+        <p>ອາຫານທີ່ມັກ: {{foods}}</p>
         <!-- //ການດຶງຂໍ້ມູນໃສ່ ບອກ ຕ້ອງໃສ້່ keyword: V-bind:........ຕາມດ້ວຍຕົວຂໍ້ມູນເຊັ່ນ name -->
 
         <hr>
