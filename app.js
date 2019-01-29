@@ -1,3 +1,7 @@
+Vue.component('todo-item', {
+    template: '<li>This is a todo</li>'
+  })
+
 var app = new Vue({
     el:"#view-App",
     data:{
@@ -6,7 +10,13 @@ var app = new Vue({
         job: "developer",
         age: 20,
         status: false,
-        website: 'https:www.smshopper.Com'
+        count:0,
+        website: 'https:www.smshopper.Com',
+        todos: [
+            { text: 'Learn JavaScript' },
+            { text: 'Learn Vue' },
+            { text: 'Build something awesome' }
+        ]
     },
     methods:{
          getName: function(){
@@ -23,6 +33,11 @@ var app = new Vue({
              this.age--;
             console.log(this.age);
             
+         },
+         AddCount:function(){
+             this.count++;
+             console.log(this.count);
+             
          }
     }
 })
