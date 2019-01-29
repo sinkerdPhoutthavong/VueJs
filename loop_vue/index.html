@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js - Tutorial</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <font face="phetsarath OT">
+    <div id="loop">
+       <h1>{{products[0]}}</h1>
+       <h1>{{products[1]}}</h1>
+       <h1>{{products[2]}}</h1>
+       <h1>{{products[3]}}</h1>
+       <ul>
+            <li v-for="p in products">
+                    {{p}}
+                </li>
+                <hr>
+            <li v-for="em in employees">
+                    {{em}} || {{em.name}} || {{em.age}} || {{em.address}}
+         <!-- ສາມາດລະບຸ ຊື່ຂອງຂໍ້ມູນໃນ Array ເຊັ່ນ: ຊື່ ພວກເຮົາສາມາດ ສະແດງໄດ້ຈາກ {name:'ທ້າວ ສຸວັນນະສິດ',age:25,address:'Laos'}, ພຽງ ໃຊ້ຕົວປ່ຽນທີ່ loop for ເກັບໄວ້  emp.name -->
+            </li>
+        </ul>
+    </div>
+    </font>
+    <script src="index.js" charset="utf-8"></script>
+
+</body>
+</html>
