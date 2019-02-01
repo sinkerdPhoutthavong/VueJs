@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js - Tutorial</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <font face="phetsarath OT">
+    <div id="vue-app">
+        <span>ຊື່ພະນັກງານ:</span>
+        <input v-model="newData.empName">
+        <span>ເງິນເດືອນ</span>
+        <input v-model="newData.salary">
+        <br><br>
+        <button @click="addEmp">Save Data</button>
+        <br>
+        <ul>
+            <li v-for="emp in empGroup">
+                {{emp.empName}} ໄດ້ເງິນເດືອນ {{emp.salary}}
+            </li>
+        </ul>
+        <h3>ຈໍານວນເງິນທີ່ຕ້ອງຈ່າຍພະນັກງານ: {{summation}} ກີບ</h3>
+        <h3>ສະເລ່ຍ: {{Average}} ກີບ</h3>
+    </div>
+    </font>
+    <script src="index.js" charset="utf-8"></script>
+
+</body>
+</html>
