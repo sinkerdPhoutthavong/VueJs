@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js - Tutorial</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <font face="phetsarath OT">
+    <div id="post">
+       <h3>ຫົວຂໍ້: {{title}}</h3>
+       <h4>ລາຍລະອຽດ: {{message}}</h4>
+    </div>
+    <div id="comment">
+        <textarea name="" id="" cols="50" rows="10">{{text}}</textarea>
+    </div>
+    <div id="likeSystem">
+        <button type="button" v-on:click="like=!like">Like</button>
+        {{like}}
+    </div>
+    </font>
+    <script src="index.js" charset="utf-8"></script>
+
+</body>
+</html>
