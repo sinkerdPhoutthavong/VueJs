@@ -27,6 +27,9 @@ var app = new Vue({
             // ຫຼັງຈາກປ້ອນແລ້ວ set default
             this.newData.empName='';
             this.newData.salary=0;
+        },
+        showMessage:function(){
+            console.log("sending data to firebase....");
         }
     },
     computed:{
@@ -45,10 +48,17 @@ var app = new Vue({
                     //0+5000=5000
                     //5000+4000 = 9000
                 },0);
-                console.log(this.empGroup.length); //ສະແດງພະນັກງານພາຍໃນ  empGroup ມີຈັກຄົນ
-                console.log(sum/this.empGroup.length);
+                // console.log(this.empGroup);
+                // console.log(this.empGroup.length); //ສະແດງພະນັກງານພາຍໃນ  empGroup ມີຈັກຄົນ
+                // console.log(sum/this.empGroup.length);
                 return sum/this.empGroup.length;
             }
+        },
+        watch:{
+            //ຫຼັງຈາກ summation ສໍາເລັດ
+            summation:function(){
+                //ທຳອະໄຣ
+                 this.showMessage();
+            }
         }
-    
 })
